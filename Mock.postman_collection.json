@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "69086e53-cbd7-484a-85e9-d69da0347aea",
+		"name": "Mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32079525"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Kiet Kun\",\r\n    \"username\": \"abc\",\r\n    \"email\": \"abc@gmail.com\",\r\n    \"password\": \"kietkunkiet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usernameOrEmail\": \"abc@gmail.com\",\r\n    \"password\": \"kietkunkiet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/authtoken/v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/authtoken/v1"
+			},
+			"response": []
+		}
+	]
+}
